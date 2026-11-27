@@ -1,0 +1,75 @@
+<!doctype html>
+<html lang="en" dir="ltr">
+<head>
+  <meta charset="utf-8"><meta name="viewport" content="width=device-width,initial-scale=1,viewport-fit=cover">
+  <meta name="theme-color" content="#080d0c"><title>NOVA | TahaDevX</title>
+  <link rel="stylesheet" href="/style.css">
+</head>
+<body>
+<div class="app-shell">
+  <header class="topbar">
+    <div class="identity">
+      <div class="logo" aria-hidden="true"><span></span><span></span><span></span></div>
+      <div><div class="brand-name">NOVA</div><div class="brand-sub">Intelligent Desktop Assistant</div></div>
+    </div>
+    <div class="header-tools">
+      <button class="round-tool settings-tool" id="settings-toggle" type="button" title="Settings" aria-label="Settings">⚙</button>
+      <button class="round-tool" id="voice-toggle" type="button" title="Toggle voice replies" aria-label="Toggle voice replies">
+        <svg viewBox="0 0 24 24"><path d="M11 5 6 9H3v6h3l5 4V5Z"/><path d="M15.5 8.5a5 5 0 0 1 0 7M18.5 5.5a9 9 0 0 1 0 13"/></svg>
+      </button>
+      <div class="connection"><i></i><span id="status">Ready</span></div>
+    </div>
+  </header>
+
+  <section class="settings-panel" id="settings-panel" hidden>
+    <div class="settings-head"><strong>NOVA Settings</strong><button type="button" id="settings-close" aria-label="Close settings">×</button></div>
+    <div class="settings-label">Computer access</div>
+    <label class="access-option"><input type="radio" name="access-mode" value="limited"><span><b>Limited Access</b><small>File operations are restricted to the NOVA workspace.</small></span></label>
+    <label class="access-option"><input type="radio" name="access-mode" value="full"><span><b>Full User Access</b><small>Use locations and files allowed by the current Windows account. This does not enable Administrator privileges.</small></span></label>
+    <p id="access-status" class="access-status">Loading settings…</p>
+  </section>
+  <main class="main-area">
+    <section class="welcome" id="welcome">
+      <div class="orb"><div class="orb-core">N</div><span class="orbit orbit-a"></span><span class="orbit orbit-b"></span></div>
+      <div class="kicker">YOUR DESKTOP ASSISTANT</div>
+      <h1>How can I help you today?</h1>
+      <p>Type a request or use the microphone. NOVA can converse in your language.</p>
+      <div class="suggestions">
+        <button type="button" data-prompt="Open PyCharm"><b>⌘</b><span>Open PyCharm</span></button>
+        <button type="button" data-prompt="Create a file named hello.py in my NOVA workspace, write a Hello World program, and open it in PyCharm."><b>{ }</b><span>Create a Python file</span></button>
+        <button type="button" data-prompt="Open Google Chrome"><b>◉</b><span>Open Chrome</span></button>
+        <button type="button" data-prompt="Search Google for the latest FastAPI documentation."><b>⌕</b><span>Search Google</span></button>
+      </div>
+    </section>
+    <section class="chat" id="chat" aria-live="polite" aria-label="Conversation"></section>
+  </main>
+
+  <footer class="composer-area">
+    <form class="composer" id="composer">
+      <textarea id="message" rows="1" placeholder="Message NOVA…" aria-label="Message NOVA"></textarea>
+      <div class="composer-buttons">
+        <button class="mic" id="mic" type="button" aria-label="Start voice input" title="Voice input">
+          <svg viewBox="0 0 24 24"><rect x="9" y="2.5" width="6" height="12" rx="3"/><path d="M5.5 10.5a6.5 6.5 0 0 0 13 0M12 17v4m-4 0h8"/></svg>
+        </button>
+        <button class="send" id="send" type="submit" aria-label="Send message"><svg viewBox="0 0 24 24"><path d="m5 12 14-7-4 14-3-6-7-1Z"/><path d="m12 13 7-8"/></svg></button>
+      </div>
+    </form>
+    <div class="composer-meta">
+      <span id="voice-hint">Select a voice language for speech input</span>
+      <span class="meta-right">
+        <label for="voice-language">Voice language</label>
+        <select id="voice-language" aria-label="Voice input language">
+          <option value="en-US" selected>English</option>
+          <option value="fr-FR">French</option>
+          <option value="de-DE">German</option>
+          <option value="es-ES">Spanish</option>
+          <option value="fa-IR">Persian</option>
+        </select>
+        <span>Enter to send · Shift + Enter for a new line</span>
+      </span>
+    </div>
+    <div class="footer-brand">Developed by <strong>Muhammad Taha Torabzadeh</strong></div>
+  </footer>
+</div>
+<script src="/app.js"></script>
+</body></html>
