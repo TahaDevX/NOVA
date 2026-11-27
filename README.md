@@ -8,16 +8,18 @@ NOVA is an AI-powered desktop assistant for Windows. It provides a web-based cha
 - Python 3.10 or newer
 - An OpenRouter API key
 
-## Setup
+## Quick setup
 
 1. Download or clone this repository.
 2. Run `install.bat`.
-3. Copy `.env.example` to `.env` and add your OpenRouter API key.
-4. Run `start.bat` and open the local address shown in the terminal.
+3. Copy `.env.example` to `.env` (the installer creates it automatically if missing) and add your OpenRouter API key.
+4. Run `start.bat`.
+5. Use the local address shown in the terminal or scan the QR code on the connection page.
 
-## Configuration
+## Documentation
 
-Set `OPENROUTER_API_KEY` and, if desired, `OPENROUTER_MODEL` and `OPENROUTER_FALLBACK_MODEL` in `.env`.
+- [Complete user guide](USER_GUIDE.md) — installation, configuration, everyday examples, voice, phone connection, troubleshooting, and safe use.
+- [Detailed project overview](README_EN.md)
 
 ## Access modes
 
