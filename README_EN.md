@@ -1,6 +1,6 @@
 # NOVA - Intelligent Desktop Assistant
 
-Developed by **Muhammad Taha Torabzadeh** ([TahaDevX](https://github.com/TahaDevX)).  
+Developed by **Mohammad Taha Torabzadeh** ([TahaDevX](https://github.com/TahaDevX)).  
 Contact: [MohammadTaha.dev@gmail.com](mailto:MohammadTaha.dev@gmail.com)
 
 ## Features
@@ -56,6 +56,6 @@ Select the spoken language from the **Voice language** menu before using the mic
 See [USER_GUIDE.md](USER_GUIDE.md) for step-by-step installation, examples, phone connection, troubleshooting, and safe-use guidance.
 
 ## Author
-**Muhammad Taha Torabzadeh**  
+**Mohammad Taha Torabzadeh**  
 GitHub: [@TahaDevX](https://github.com/TahaDevX)  
 Email: [MohammadTaha.dev@gmail.com](mailto:MohammadTaha.dev@gmail.com)
