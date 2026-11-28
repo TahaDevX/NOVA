@@ -27,4 +27,4 @@ Limited Access restricts file operations to the NOVA workspace. Full User Access
 
 ## Author
 
-Muhammad Taha Torabzadeh — [TahaDevX](https://github.com/TahaDevX) — MohammadTaha.dev@gmail.com
+Mohammad Taha Torabzadeh — [TahaDevX](https://github.com/TahaDevX) — MohammadTaha.dev@gmail.com
