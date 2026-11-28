@@ -99,7 +99,7 @@ def connect_page():
 <p>Scan one of the QR codes below with your phone camera to open NOVA. Or enter the address manually in your mobile browser.</p>
 <section class="cards">{cards_html}</section><p class="note">{note}</p>
 <div class="local"><p style="margin:0 0 7px">Open NOVA on this computer:</p><a href="{local_url}"><code>{local_url}</code></a></div>
-<footer>Developed by Muhammad Taha Torabzadeh</footer></main>
+<footer>Developed by Mohammad Taha Torabzadeh</footer></main>
 <script>function copyAddress(value){{if(navigator.clipboard){{navigator.clipboard.writeText(value).then(()=>alert('Address copied.')).catch(()=>alert(value));}}else{{alert(value);}}}}</script></body></html>'''
 
 
