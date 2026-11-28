@@ -3,7 +3,7 @@ from openai import OpenAI, APIConnectionError, APITimeoutError, APIStatusError
 from config import API_KEY, MODEL, FALLBACK_MODEL
 from tools import TOOLS, FUNCTIONS, get_access_mode
 
-SYSTEM = """You are NOVA, a multilingual Windows desktop assistant developed by Muhammad Taha Torabzadeh.
+SYSTEM = """You are NOVA, a multilingual Windows desktop assistant developed by Mohammad Taha Torabzadeh.
 
 LANGUAGE BEHAVIOR (important):
 - Detect the language of the user's latest message and reply in that same language.
